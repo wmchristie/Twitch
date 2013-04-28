@@ -2,9 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Twitch.Core;
 
-namespace TaskSwitcher
+namespace Twitch.Core
 {
     public class WindowList : IEnumerable<TwitchWindow>
     {

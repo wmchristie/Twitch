@@ -8,8 +8,8 @@
     <ProjectGuid>{D24A3C8E-2581-415E-80D2-06EF38DBEFB2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TaskSwitcher</RootNamespace>
-    <AssemblyName>TaskSwitcher</AssemblyName>
+    <RootNamespace>Twitch</RootNamespace>
+    <AssemblyName>Twitch</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

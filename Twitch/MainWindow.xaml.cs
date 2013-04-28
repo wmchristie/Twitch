@@ -2,7 +2,7 @@
 using System.Windows;
 using Twitch.Core;
 
-namespace TaskSwitcher
+namespace Twitch
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
