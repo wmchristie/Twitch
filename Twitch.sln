@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A63627
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitch.Core", "Twitch.Core\Twitch.Core.csproj", "{2FEAC6F9-64D5-4BD7-BB84-412E35587439}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Twitch.vsmdi
@@ -64,6 +66,16 @@ Global
 		{6536D5A8-4208-461F-AB4A-5F48A8056C1E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6536D5A8-4208-461F-AB4A-5F48A8056C1E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6536D5A8-4208-461F-AB4A-5F48A8056C1E}.Release|x86.ActiveCfg = Release|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2FEAC6F9-64D5-4BD7-BB84-412E35587439}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
