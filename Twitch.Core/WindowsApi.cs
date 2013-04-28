@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 
 // ReSharper disable InconsistentNaming
-namespace TaskSwitcher
+namespace Twitch.Core
 {
     public delegate bool Win32Callback(IntPtr hwnd, IntPtr lParam);
 

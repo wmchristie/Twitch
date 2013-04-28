@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TaskSwitcher
+namespace Twitch.Core
 {
     public class TopLevelWindows : WindowList
     {

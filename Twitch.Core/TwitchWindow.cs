@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TaskSwitcher
+namespace Twitch.Core
 {
 
     public class TwitchWindow
