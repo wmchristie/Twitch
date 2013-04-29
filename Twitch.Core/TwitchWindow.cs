@@ -7,24 +7,25 @@ namespace Twitch.Core
 
     public class TwitchWindow
     {
-        private readonly IntPtr _handle;
 
         public TwitchWindow(IntPtr handle)
         {
-            _handle = handle;
+            Handle = handle;
         }
 
-        public WindowList ChildWindows
+        public IntPtr Handle { get; private set; }
+
+        public virtual IEnumerable<TwitchWindow> Children
         {
             get { return new WindowList(GetChildWindowHandles()); }
         }
 
         public virtual string Title
         {
-            get { return GetText(_handle); }
+            get { return GetText(Handle); }
         }
 
-        private static string GetText(IntPtr hWnd)
+        protected static string GetText(IntPtr hWnd)
         {
             // Allocate correct string length first
             var length = WindowsApi.GetWindowTextLength(hWnd);
@@ -39,7 +40,7 @@ namespace Twitch.Core
             var empty = default(IntPtr);
             var handles = new List<IntPtr>();
 
-            WindowsApi.EnumChildWindows(_handle, (hwnd, lParam) => {
+            WindowsApi.EnumChildWindows(Handle, (hwnd, lParam) => {
 
                 handles.Add(hwnd);
 

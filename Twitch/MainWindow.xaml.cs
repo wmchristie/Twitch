@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using System.Windows;
-using Twitch.Core;
+﻿using System.Windows;
 
 namespace Twitch
 {
@@ -28,8 +26,8 @@ namespace Twitch
             var windowList = new WindowList(processes);
 */
 
-            textBox1.Text = string.Join("\r\n", new TopLevelWindows().SelectMany(w => new[] {w.Title}
-                .Concat(w.ChildWindows.Select(cw => cw.Title))).Where(t => !string.IsNullOrEmpty(t)));
+//            textBox1.Text = string.Join("\r\n", new DesktopWindow().SelectMany(w => new[] {w.Title}
+//                .Concat(w.ChildWindows.Select(cw => cw.Title))).Where(t => !string.IsNullOrEmpty(t)));
         }
 
     }
