@@ -1,19 +1,47 @@
-﻿using TechTalk.SpecFlow;
+﻿using System.Collections.Generic;
+using TechTalk.SpecFlow;
+using System.Diagnostics;
 
 namespace Twitch.Spec
 {
     [Binding]
     public class ShowListOfRunningApplicationsSteps
     {
-        [Given(@"notepad is opened on testfile(.*)\.txt")]
-        public void GivenNotepadIsOpenedOnTestfile_Txt(int p0)
+        private static List<Process> _openedProcesses;
+
+        private static List<Process> OpenedProcesses
         {
-            ScenarioContext.Current.Pending();
+            get { return _openedProcesses ?? (_openedProcesses = new List<Process>()); }
+        }
+
+        [AfterScenario]
+        public void CloseNotepadProcesses()
+        {
+
+            foreach (var process in OpenedProcesses)
+            {
+                process.Kill();
+            }
+
+            OpenedProcesses.Clear();
+
+        }
+
+        [Given(@"notepad is opened on (.*)")]
+        public void GivenNotepadIsOpenedOnTestfile_Txt(string filename)
+        {
+            var process = Process.Start(new ProcessStartInfo
+            {
+                FileName = "Notepad.exe"
+            });
+
+            OpenedProcesses.Add(process);
         }
         
         [When(@"the chord is pressed")]
         public void WhenTheChordIsPressed()
         {
+            // Todo: how to send the keys
             ScenarioContext.Current.Pending();
         }
         
